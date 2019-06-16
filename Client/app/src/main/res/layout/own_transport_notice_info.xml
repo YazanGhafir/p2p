@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:background="#FFc914"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+  <LinearLayout
+      android:id="@+id/owntransportnoticeinfo"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:layout_marginStart="8dp"
+      android:layout_marginEnd="8dp"
+      android:layout_marginBottom="8dp"
+      android:orientation="vertical"
+      android:weightSum="13"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent">
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#ffa100"
+        android:padding="5dp"
+        android:text="Notice type"
+        android:textSize="22dp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/noticeTypeItem"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_weight="1"
+        android:background="#ffba00" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#ffa100"
+        android:padding="5dp"
+        android:text="Telephone number"
+        android:textSize="22dp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/accountIdItem"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:background="#ffba00" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#ffa100"
+        android:padding="5dp"
+        android:text="Transport informtion"
+        android:textSize="22dp"
+        android:textStyle="bold|italic" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffa100"
+        android:orientation="horizontal">
+
+      <TextView
+          android:id="@+id/textView19"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:padding="10dp"
+          android:text="@string/from"
+          android:textStyle="bold|italic" />
+
+      <TextView
+          android:id="@+id/textView20"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:padding="10dp"
+          android:text="@string/to"
+          android:textStyle="bold|italic" />
+
+      <TextView
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:padding="10dp"
+          android:text="Delivery date"
+          android:textStyle="bold|italic" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffba00"
+        android:orientation="horizontal">
+
+      <TextView
+          android:id="@+id/fromItem"
+          android:layout_width="0dp"
+          android:layout_height="46dp"
+          android:layout_weight="1" />
+
+      <TextView
+          android:id="@+id/toItem"
+          android:layout_width="0dp"
+          android:layout_height="46dp"
+          android:layout_weight="1" />
+
+      <TextView
+          android:id="@+id/dateItem"
+          android:layout_width="0dp"
+          android:layout_height="46dp"
+          android:layout_weight="1" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#ffa100"
+        android:padding="5dp"
+        android:text="Package information"
+        android:textSize="22dp"
+        android:textStyle="bold|italic" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffa100"
+        android:orientation="horizontal">
+
+      <TextView
+          android:id="@+id/textView23"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:padding="10dp"
+          android:text="Capacity"
+          android:textStyle="bold|italic" />
+
+      <TextView
+          android:id="@+id/textView24"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:padding="10dp"
+          android:text="Means of transport"
+          android:textStyle="bold|italic" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffba00"
+        android:orientation="horizontal">
+
+      <TextView
+          android:id="@+id/capacityItem"
+          android:layout_width="0dp"
+          android:layout_height="47dp"
+          android:layout_weight="1" />
+
+      <TextView
+          android:id="@+id/meansItem"
+          android:layout_width="0dp"
+          android:layout_height="47dp"
+          android:layout_weight="1"
+          android:background="#ffba00" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#ffa100"
+        android:padding="5dp"
+        android:text="Price information"
+        android:textSize="22dp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/priceItem"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:background="#ffba00" />
+
+    <Button
+        android:id="@+id/deleteTbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Delete" />
+  </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,57 @@
+env:
+  global:
+   # Timeout in minutes, default is 2
+   # Required, otherwise Travis times out before 
+   # starting the emulator. 
+   - ADB_INSTALL_TIMEOUT=8  
+matrix:      # Run both android and java tests
+ include: 
+  - language: java
+    before_script:
+     # Root repository directory is not root java project directory.    
+     - cd Server          
+     - chmod +x gradlew
+     
+    # Tell maven to run tests.      
+    script: 
+      - ./gradlew build
+      - ./gradlew checkstyleMain
+      - ./gradlew checkstyleTest
+  - language: android
+    # Use the Java Development Kit 8
+    jdk: oraclejdk8
+    android:
+      components: 
+        # Install 28.0.3 Build tools, Android 2.8, Android-19 and a 
+        # System Image in order to run an Android Emulator running 
+        # Android 19
+        - build-tools-28.0.3
+        - android-28.0.0
+        - android-19
+        - sys-img-armeabi-v7a-android-19
+      licenses:
+        # Auto accept licenses.
+        - 'android-sdk-license-.+' 
+    before_install:
+      # Accept some more licenses.
+    - yes | sdkmanager "platforms;android-28"
+    before_script: 
+     # Change root directory to android root.
+     - cd Client
+     # Give Travis VM permission to use gradlew
+     - chmod +x gradlew
+     
+     # Start the emulator.
+     - echo no | android create avd --force -n test -t android-19 --abi armeabi-v7a
+     - emulator -avd test -no-window &
+     - android-wait-for-emulator
+     - adb shell input keyevent 82 &
+    
+    script:
+     - android list target
+     # Run checkstyle
+     - ./gradlew checkstyle
+     # Run tests
+     - ./gradlew build connectedCheck
+
+

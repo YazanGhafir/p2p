@@ -1,0 +1,7 @@
+  <!-- Tone down the checking for test code -->
+<suppressions>
+  
+  <suppress checks="ExecutableStatementCount|JavaNCSS|BooleanExpressionComplexity|
+                      |NestedIfDepth|MethodLength"
+              files="[\\/]XdocsPagesTest\.java"/>	
+</suppressions>

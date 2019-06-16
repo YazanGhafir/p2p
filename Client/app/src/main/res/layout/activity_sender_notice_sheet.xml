@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFc914"
+    tools:context=".view.SenderNoticeSheet">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:weightSum="18"
+      android:layout_margin="20dp"
+      android:layout_marginEnd="8dp"
+      android:orientation="vertical"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent">
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:background="#ffa100"
+        android:padding="1dp"
+        android:paddingTop="1dp"
+        android:text="Telephone number"
+        android:textStyle="bold|italic" />
+
+    <EditText
+        android:id="@+id/telephoneNumberId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1"
+        android:background="#ffba00"
+        android:ems="10"
+        android:hint="+46"
+        android:inputType="phone"
+        android:padding="1dp"
+        android:text="733888888"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:background="#ffa100"
+        android:padding="5dp"
+        android:text="Transport information"
+        android:textStyle="bold|italic" />
+
+    <fragment
+      android:id="@+id/matching_places"
+      android:name="com.snubbull.app.view.PlacesFragment"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_weight="2"
+      android:background="#ffa100" />
+
+    <Button
+        android:id="@+id/inputfieldDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+
+        android:layout_weight="1"
+        android:background="#ffba00"
+        android:ems="10"
+        android:hint="Date"
+        android:inputType="date"
+        android:padding="5dp"
+        android:text="2019-06-06"
+        android:textStyle="italic" />
+
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:background="#ffa100"
+        android:padding="5dp"
+        android:text="Capacity"
+        android:textStyle="bold|italic" />
+
+    <EditText
+        android:id="@+id/inutfieldWeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#ffba00"
+        android:ems="10"
+        android:hint="Weight"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:text="20"
+        android:textStyle="italic" />
+
+    <EditText
+        android:id="@+id/inputfieldVolume"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#ffba00"
+        android:ems="10"
+        android:hint="Dimension"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:text="30"
+        android:textStyle="italic" />
+
+    <EditText
+        android:id="@+id/inputfieldQuantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1"
+        android:background="#ffba00"
+        android:ems="10"
+        android:hint="Quantity"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:text="4"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:background="#ffa100"
+        android:padding="5dp"
+        android:text="Price"
+        android:textStyle="bold|italic" />
+
+    <EditText
+        android:id="@+id/inputfieldPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#ffba00"
+        android:ems="10"
+        android:hint="SEK"
+        android:inputType="number"
+        android:padding="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="35"
+        android:textStyle="italic" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+      <Button
+          android:id="@+id/postBtn"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:background="#FB876f"
+          android:text="POST NOTICE" />
+    </LinearLayout>
+
+  </LinearLayout>
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+</android.support.constraint.ConstraintLayout>

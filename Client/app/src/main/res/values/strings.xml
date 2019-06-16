@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">app</string>
+    <string name="sender">Sender</string>
+    <string name="sender_post">Sender post</string>
+    <string name="title">title...</string>
+    <string name="discription">discription...</string>
+    <string name="from">from..</string>
+    <string name="to">to..</string>
+    <string name="post">Post</string>
+    <string name="title_activity_notice_info_view">NoticeInfoView</string>
+    <string name="title_activity_list_tamplate">listTamplate</string>
+</resources>
