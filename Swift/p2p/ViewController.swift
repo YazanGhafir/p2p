@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    let list = ["Yazan", "Razan", "Meeraz", "Talya"]
+    let list = ["Yazan", "Razan", "Meeraz", "Talya", "Zed"]
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return(list.count)

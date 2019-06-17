@@ -99,7 +99,7 @@
 		211D105E22B6399100232C46 /* p2p */ = {
 			isa = PBXGroup;
 			children = (
-				214F07E922B7D40C00034440 /* app */,
+				214F07E922B7D40C00034440 /* App */,
 				214F07E722B7D3FA00034440 /* Global */,
 				211D106122B6399100232C46 /* SceneDelegate.swift */,
 				211D106822B6399300232C46 /* Assets.xcassets */,
@@ -167,14 +167,14 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
-		214F07E922B7D40C00034440 /* app */ = {
+		214F07E922B7D40C00034440 /* App */ = {
 			isa = PBXGroup;
 			children = (
 				214F07E622B7D3F200034440 /* Controller */,
 				214F07E522B7D3EB00034440 /* View */,
 				214F07E422B7D3E100034440 /* Model */,
 			);
-			path = app;
+			path = App;
 			sourceTree = "<group>";
 		};
 		214F07EA22B7D4F100034440 /* View */ = {
